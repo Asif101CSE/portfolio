@@ -605,26 +605,57 @@
     </section>
 
     <!-- 6️⃣ CONTACT + FOOTER (integrated) -->
-    <section id="contact" class="section-container">
-      <h2 class="section-title fade-up">Get in touch</h2>
-      <div class="contact-grid fade-up">
-        <div>
-          <div class="form-group"><input type="text" placeholder="Your name" id="contactName"></div>
-          <div class="form-group"><input type="email" placeholder="Email address" id="contactEmail"></div>
-          <div class="form-group"><textarea placeholder="Message (I reply within 24h)" id="contactMsg"></textarea></div>
-          <button class="btn btn-primary" id="sendMsgBtn"><i class="fas fa-paper-plane"></i> Send message</button>
-        </div>
-        <div style="display: flex; flex-direction: column; justify-content: space-between;">
-          <p style="font-size: 1.3rem; color: #1d3e6b;">asifalidev07@gmail.com <br>📞 +91 9582284633</p>
-          <p style="color: #3d618a;">553, Krishna Nagar, Ghaziabad</p>
-          <div class="social-links">
-            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-          </div>
-        </div>
+   <section id="contact" class="section-container">
+  <h2 class="section-title fade-up">Get in touch</h2>
+
+  <div class="contact-grid fade-up">
+    
+    <!-- FORM START -->
+    <form action="https://formspree.io/f/mwvndwpa" method="POST">
+      
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your name" required>
       </div>
-    </section>
+
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email address" required>
+      </div>
+
+      <div class="form-group">
+        <textarea name="message" placeholder="Message (I reply within 24h)" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        <i class="fas fa-paper-plane"></i> Send message
+      </button>
+
+    </form>
+    <!-- FORM END -->
+
+    <!-- CONTACT INFO SIDE -->
+    <div style="display: flex; flex-direction: column; justify-content: space-between;">
+      <p style="font-size: 1.3rem; color: #1d3e6b;">
+        asifalidev07@gmail.com <br> 📞 +91 9582284633
+      </p>
+      <p style="color: #3d618a;">
+        553, Krishna Nagar, Ghaziabad
+      </p>
+
+      <div class="social-links">
+        <a href="#" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
   </main>
 
   <footer class="footer">
